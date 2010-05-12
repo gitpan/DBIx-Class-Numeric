@@ -5,6 +5,5 @@ Makefile.PL
 README
 dist.ini
 lib/DBIx/Class/Numeric.pm
-mutant.dj
 t/base.t
 t/lib/FakeClass.pm

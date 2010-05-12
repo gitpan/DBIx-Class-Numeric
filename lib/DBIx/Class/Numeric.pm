@@ -1,34 +1,34 @@
 =head1 NAME
 
-DBIx::Class::Numeric - add helper methods for numeric columns
+DBIx::Class::Numeric - adds helper methods for numeric columns
 
 =head1 SYNOPSIS
 
-package MyApp::Schema::SomeTable;
+ package MyApp::Schema::SomeTable;
 
-use base 'DBIx::Class';
+ use base 'DBIx::Class';
 
-__PACKAGE__->load_components(qw/Core Numeric/); # Load the Numeric component
+ __PACKAGE__->load_components(qw/Core Numeric/); # Load the Numeric component
 
-__PACKAGE__->add_columns(
-    qw/primary_id some_string num_col1 num_col2/
-);
+ __PACKAGE__->add_columns(
+     qw/primary_id some_string num_col1 num_col2/
+ );
 
-__PACKAGE__->numeric_cols(qw/num_col1 num_col2/); # List any cols that need the extra functionality
+ __PACKAGE__->numeric_cols(qw/num_col1 num_col2/); # List any cols that need the extra functionality
 
-# ... meanwhile, after reading a record from the DB
+ # ... meanwhile, after reading a record from the DB
 
-$row->increase_num_col1(5); # Add 5 to num_col1
+ $row->increase_num_col1(5); # Add 5 to num_col1
 
-$row->decrease_num_col2(9); # Subtract 9 from num_col2
+ $row->decrease_num_col2(9); # Subtract 9 from num_col2
 
-$row->adjust_num_col1(-5); # Subtract 5 from num_col1
-						   # (can be positive or negative, as can increase/decrease...
-						   #  adjust is just a clearer name...) 
+ $row->adjust_num_col1(-5); # Subtract 5 from num_col1
+                            # (can be positive or negative, as can increase/decrease...
+                            #  adjust is just a clearer name...) 
 
-$row->increment_num_col1; # Increment num_col1
+ $row->increment_num_col1; # Increment num_col1
 
-$row->decrement_num_col2; # Decrement num_col2
+ $row->decrement_num_col2; # Decrement num_col2
 
 =head1 DESCRIPTION
 
@@ -60,7 +60,7 @@ package DBIx::Class::Numeric;
 use strict;
 use warnings;
 
-our $VERSION = '0.001';
+our $VERSION = '0.002';
 
 use base qw(DBIx::Class);
 
