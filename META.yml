@@ -1,5 +1,5 @@
 ---
-abstract: 'adds helper methods for numeric columns'
+abstract: 'helper methods for numeric columns'
 author:
   - 'Sam Crawley <mutant.nz@gmail.com>'
 build_requires: {}
@@ -15,4 +15,4 @@ recommends: {}
 requires:
   DBIx::Class: 0.08121
   Sub::Name: 0.04
-version: 0.002
+version: 0.003

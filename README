@@ -1,9 +1,9 @@
 
 
 This archive contains the distribution DBIx-Class-Numeric,
-version 0.002:
+version 0.003:
 
-  adds helper methods for numeric columns
+  helper methods for numeric columns
 
 This software is copyright (c) 2010 by Sam Crawley.
 

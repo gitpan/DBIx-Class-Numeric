@@ -9,7 +9,7 @@ use ExtUtils::MakeMaker 6.31;
 
 
 my %WriteMakefileArgs = (
-  'ABSTRACT' => 'adds helper methods for numeric columns',
+  'ABSTRACT' => 'helper methods for numeric columns',
   'AUTHOR' => 'Sam Crawley <mutant.nz@gmail.com>',
   'BUILD_REQUIRES' => {},
   'CONFIGURE_REQUIRES' => {
@@ -23,7 +23,7 @@ my %WriteMakefileArgs = (
     'DBIx::Class' => '0.08121',
     'Sub::Name' => '0.04'
   },
-  'VERSION' => '0.002',
+  'VERSION' => '0.003',
   'test' => {
     'TESTS' => 't/*.t'
   }

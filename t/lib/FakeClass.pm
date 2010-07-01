@@ -9,7 +9,6 @@ __PACKAGE__->load_components(qw/Numeric/);
 
 __PACKAGE__->numeric_columns(qw/foo bar/);
 
-
 # A little trickery to pretend we're a real DBIx::Class module
 my %fake_cols;
 

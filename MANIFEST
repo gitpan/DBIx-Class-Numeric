@@ -1,3 +1,4 @@
+Changes
 LICENSE
 MANIFEST
 META.yml
@@ -5,5 +6,11 @@ Makefile.PL
 README
 dist.ini
 lib/DBIx/Class/Numeric.pm
-t/base.t
+t/aliases.t
+t/bounded_cols.t
+t/data/tmp.dat
 t/lib/FakeClass.pm
+t/lib/TestSchema.pm
+t/lib/TestSchema/BoundedTable.pm
+t/lib/TestSchema/TestTable.pm
+t/min_max_values.t
