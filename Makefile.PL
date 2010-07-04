@@ -11,7 +11,9 @@ use ExtUtils::MakeMaker 6.31;
 my %WriteMakefileArgs = (
   'ABSTRACT' => 'helper methods for numeric columns',
   'AUTHOR' => 'Sam Crawley <mutant.nz@gmail.com>',
-  'BUILD_REQUIRES' => {},
+  'BUILD_REQUIRES' => {
+    'SQL::Translator' => '0.11006'
+  },
   'CONFIGURE_REQUIRES' => {
     'ExtUtils::MakeMaker' => '6.31'
   },
@@ -23,7 +25,7 @@ my %WriteMakefileArgs = (
     'DBIx::Class' => '0.08121',
     'Sub::Name' => '0.04'
   },
-  'VERSION' => '0.003',
+  'VERSION' => '0.004',
   'test' => {
     'TESTS' => 't/*.t'
   }
